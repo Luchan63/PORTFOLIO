@@ -1,0 +1,910 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box; /* Para que los padding y margin no afecten el tamaño de los elementos */
+    font-family: 'Work Sans'; /* Para que todos los elementos tengan la misma fuente */
+    margin: 0; /* Para que no haya margenes */
+    padding: 0; /* Para que no haya padding */
+}
+
+html{
+    scroll-behavior: smooth; /* Para que el scroll sea suave */
+}
+
+/* MENU */
+.contenedor-header{
+    background: #1e2326; /* Color de fondo */
+    position: fixed; /* Para que se quede fijo en la parte superior */
+    width: 100%; /* Para que ocupe todo el ancho */
+    left: 0; /* Para que esté a la izquierda */
+    top: 0; /* Para que esté arriba */
+    z-index: 99; /* Para que esté por encima de los demás elementos */
+}
+
+.contenedor-header header{
+    max-width: 1100px; /* Para que no ocupe todo el ancho */
+    margin: auto; /* Para centrar */
+    display: flex; /* Para que los elementos estén en línea */
+    justify-content: space-between; /* Para que haya espacio entre los elementos */
+    align-items: center; /* Para que los elementos estén centrados verticalmente */
+    padding: 15px 20px; /* Para que haya espacio entre el contenido y el borde */
+}
+
+.contenedor-header header .logo a{
+    color: #1CB698; /* Color del texto */
+    font-size: 36px; /* Tamaño del texto */
+    font-family: 'Righteous'; /* Fuente del texto */
+    text-decoration: none; /* Para que no haya subrayado */
+}
+
+.contenedor-header header ul {
+    display: flex; /* Para que los elementos estén en línea */
+    list-style: none; /* Para que no haya viñetas */
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none; /* Para que el texto esté centrado */
+    color: #fff; /* Color del texto */
+    margin: 0 15px; /* Para que haya espacio entre los elementos */
+    padding: 3px; /* Para que haya espacio entre el texto y el borde */
+    transition: .5s; /* Para que haya una transición */
+    text-decoration: none; /* Para que no haya subrayado */
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698;; /* Color del texto */
+}
+
+.nav-responsive{
+    background-color: #1CB698; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 5px 10px; /* Para que haya espacio entre el contenido y el borde */
+    border-radius: 5px; /* Para que haya bordes redondeados */
+    cursor: pointer; /* Para que el cursor sea de tipo mano */
+    display: none; /* Para que no se muestre */
+}
+
+/* SECCION INICIO */
+.inicio{
+background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url('./img/fondo.png');  /* Para que haya un degradado y una imagen de fondo */
+/* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 105%); */
+background-size: cover; /* Para que la imagen de fondo se ajuste al tamaño del contenedor */
+height: 100vh; /* Para que ocupe todo el alto de la pantalla */
+color: #fff; /* Color del texto */
+display: flex; /* Para que los elementos estén en línea */
+align-items: center; /* Para que los elementos estén centrados verticalmente */
+}
+
+.inicio .contenido-banner{
+    padding: 20px; /* Para que haya espacio entre el contenido y el borde */
+    background-color: #1e2326; /* Color de fondo */
+    max-width: 400px; /* Para que no ocupe todo el ancho */
+    margin: auto; /* Para centrar */
+    text-align: center; /* Para que el texto esté centrado */
+    border-radius: 40px; /* Para que haya bordes redondeados */
+}
+
+.inicio .contenido-banner img{
+    margin-top: 40px; /* Para que haya espacio entre la imagen y el texto */
+    border: 10px solid #1CB698; /* Para que haya un borde */
+    display: block; /* Para que la imagen esté centrada */
+    width: 80%; /* Para que tenga un ancho de 80px */
+    margin: auto; /* Para centrar */
+    border-radius: 100%; /* Para que haya bordes redondeados */
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 35px; /* Para que haya espacio entre el texto y la imagen */
+    font-size: 42px; /* Tamaño del texto */
+    font-family: 'Righteous'; /* Fuente del texto */
+}
+
+.inicio .contenido-banner h2{
+  font-size: 15px; /* Tamaño del texto */
+  font-weight: normal; /* Para que el texto no esté en negrita */
+}
+
+.inicio .contenido-banner .redes a{
+    color: #fff; /* Color del texto */
+    display: inline-block; /* Para que los elementos estén en línea */
+    text-decoration: none; /* Para que no haya subrayado */
+    border: 1px solid #fff; /* Para que haya un borde */
+    border-radius: 100%; /* Para que haya bordes redondeados */
+    width: 42px; /* Para que tenga un ancho de 42px */
+    height: 42px; /* Para que tenga un alto de 42px */
+    line-height: 42px; /* Para que el texto esté centrado verticalmente */
+    margin: 40px 5px; /* Para que haya espacio entre los elementos */
+    font-size: 20px; /* Tamaño del texto */
+    transition: .3s; /* Para que haya una transición */
+}
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: #1CB698; /* Color de fondo */
+}
+
+/* SECCION SOBRE MI */
+.sobremi{
+    background: #1e2326; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 50px 20px; /* Para que haya espacio entre el contenido y el borde */
+    /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 120%); */
+}
+
+.sobremi .contenido-seccion{
+    max-width: 1100px; /* Para que no ocupe todo el ancho */
+    margin: auto; /* Para centrar */
+}
+
+.sobremi h2{
+    font-size: 48px; /* Tamaño del texto */
+    font-family: 'Righteous'; /* Fuente del texto */
+    text-align: center; /* Para que el texto esté centrado */
+    padding: 20px 0; /* Para que haya espacio entre el texto y el borde */
+}
+
+.sobremi .contenido-seccion p{
+    font: 18px; /* Tamaño del texto */
+    line-height: 22px; /* Para que haya espacio entre las líneas */
+    margin-bottom: 20px; /* Para que haya espacio entre los párrafos */
+}
+
+.sobremi .contenido-seccion p span{
+    color: #1CB698; /* Color del texto */
+    font-weight: bold; /* Para que el texto esté en negrita */
+}
+
+.texto {
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+    margin: 30px 0;
+    width: 100%;
+    align-items: center;
+    border: 5px solid #1CB698;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.texto p span {
+    color: #1CB698;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#leer-mas {
+    background-color: #1CB698;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#leer-mas:hover {
+    background-color: #17a589;
+}
+
+
+
+.sobremi .fila{
+    display: flex; /* Para que los elementos estén en línea */
+}
+
+.sobremi .fila .col{
+   width: 50%; /* Para que ocupe el 50% del ancho */
+}
+
+.sobremi .fila .col h3{
+    font-size: 28px; /* Tamaño del texto */
+    font-family: 'Righteous'; /* Fuente del texto */
+    margin-bottom: 25px; /* Para que haya espacio entre los títulos y los párrafos */
+}
+
+.sobremi .fila .col ul{
+    list-style: none; /* Para que no haya viñetas */
+}
+
+.sobremi .fila .col ul li{
+    margin: 12px 0; /* Para que haya espacio entre los elementos */
+}
+
+.sobremi .fila .col ul li strong{
+    display: inline-block; /* Para que los elementos estén en línea */
+    color: #1CB698; /* Color del texto */
+    width: 130px; /* Para que tenga un ancho de 150px */
+}
+
+.sobremi .fila .col ul li span{
+    color: #1CB698; /* Color del texto */
+    padding: 3px; /* Para que haya espacio entre el texto y el borde */
+    font-weight: bold; /* Para que el texto esté en negrita */
+    border-radius: 5px; /* Para que haya bordes redondeados */
+}
+
+.sobremi .fila .col .contenedor-intereses{
+    display: flex; /* Para que los elementos estén en línea */
+    flex-wrap: wrap; /* Para que los elementos se ajusten al ancho */
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses{
+    width: 100px; /* Para que tenga un ancho de 100px */
+    height: 100px; /* Para que tenga un alto de 100px */
+    background-color: #252A2E; /* Color de fondo */
+    border-radius: 10px; /* Para que haya bordes redondeados */
+    margin: 0 15px 15px 0; /* Para que haya espacio entre los elementos */
+    display: flex; /* Para que los elementos estén en línea */
+    flex-direction: column; /* Para que los elementos estén en columna */
+    align-items: center; /* Para que los elementos estén centrados verticalmente */
+    justify-content: center; /* Para que los elementos estén centrados horizontalmente */
+    transition: .3s; /* Para que haya una transición */
+    
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses:hover{
+    background-color: #1CB698; /* Color de fondo */
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses i{
+    margin-bottom: 10px; /* Para que haya espacio entre la imagen y el texto */
+    font-size: 30px; /* Tamaño del texto */
+}
+
+.sobremi button{
+    cursor: pointer; /* Para que el cursor sea de tipo mano */
+    background-color: transparent; /* Color de fondo */
+    border: 2px solid #fff; /* Para que haya un borde */
+    width: fit-content; /* Para que el ancho se ajuste al contenido */
+    display: block; /* Para que el botón esté centrado */
+    margin: 20px auto; /* Para centrar */
+    padding: 10px 22px; /* Para que haya espacio entre el contenido y el borde */
+    color: #fff; /* Color del texto */
+    font-size: 18px; /* Tamaño del texto */
+    position: relative; /* Para que haya posición relativa */
+    z-index: 10; /* Para que esté por encima de los demás elementos */
+}
+
+.sobremi button .overlay{
+    position: absolute; /* Para que haya posición absoluta */
+    top: 0; /* Para que esté arriba */
+    left: 0; /* Para que esté a la izquierda */
+    width: 0; /* Para que no tenga ancho */
+    height: 100%; /* Para que tenga todo el alto */
+    background-color: #1CB698; /* Color de fondo */
+    transition: .5s; /* Para que haya una transición */
+    z-index: -1; /* Para que esté por debajo de los demás elementos */
+}
+
+.sobremi button:hover .overlay{
+    width: 100%; /* Para que tenga todo el ancho */
+}
+
+/* SECCION HABILIDADES */
+.habilidades{
+    background: #252A2E; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 50px 20px; /* Para que haya espacio entre el contenido y el borde */
+    /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 120%); */
+}
+
+.habilidades .contenido-seccion{
+    max-width: 1100px; /* Para que no ocupe todo el ancho */
+    margin: auto; /* Para centrar */
+}
+
+.habilidades h2{
+    font-size: 48px; /* Tamaño del texto */
+    font-family: 'Righteous'; /* Fuente del texto */
+    text-align: center; /* Para que el texto esté centrado */
+    padding: 20px 0; /* Para que haya espacio entre el texto y el borde */
+}
+.habilidades .fila{
+    display: flex; /* Para que los elementos estén en línea */
+}
+
+.habilidades .fila .col{
+    width: 50%; /* Para que ocupe el 50% del ancho */
+    padding: 0 20px; /* Para que haya espacio entre el contenido y el borde */
+}
+
+.habilidades .fila .col h3{
+    font-size: 28px; /* Tamaño del texto */
+    font-family: 'Righteous'; /* Fuente del texto */
+    margin-bottom: 25px; /* Para que haya espacio entre los títulos y los párrafos */
+}
+
+.habilidades .habilidad > span{
+    font-weight: bold; /* Para que el texto esté en negrita */
+    display: block; /* Para que los elementos estén en línea */
+    margin-bottom: 10px; /* Para que haya espacio entre los elementos */
+}
+
+.habilidades .habilidad .barra-habilidades{
+    height: 8px; /* Para que tenga un alto de 8% */
+    width: 80%; /* Para que tenga un ancho de 80px */
+    background-color: #131517; /* Color de fondo */
+    position: relative; /* Para que haya posición relativa */
+    margin-bottom: 30px; /* Para que haya espacio entre los elementos */
+}
+
+.habilidades .habilidad .progreso{
+    background-color: #1CB698; /* Color de fondo */
+    position: absolute; /* Para que haya posición absoluta */
+    top: 0; /* Para que esté arriba */
+    left: 0; /* Para que esté a la izquierda */
+    height: 8px; /* Para que tenga todo el alto */
+}
+
+.habilidades .habilidad .barra-habilidades span{
+    position: absolute; /* Para que haya posición absoluta */
+    height: 40px; /* Para que tenga un alto de 40px */
+    width: 40px; /* Para que tenga un ancho de 40px */
+    background-color: #1CB698; /* Color de fondo */
+    border-radius: 50px; /* Para que haya bordes redondeados */
+    line-height: 40px; /* Para que el texto esté centrado verticalmente */
+    text-align: center; /* Para que el texto esté centrado */
+    top: -17px; /* Para que esté arriba */
+    right: -15px; /* Para que esté a la derecha */
+    font-size: 14px; /* Tamaño del texto */
+}
+
+/* estas clases se agregan con javascript */
+.habilidades .habilidad .javascript{
+    width: 0%; /* Para que tenga un ancho de 0% */
+    animation: 2s javascript forwards; /* Para que haya una animación */
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%; /* Para que tenga un ancho de 0% */
+    }
+    100%{
+        width: 85%; /* Para que tenga un ancho de 90% */
+    }
+}
+
+.habilidades .habilidad .htmlcss{
+    width: 0%; /* Para que tenga un ancho de 0% */
+    animation: 2s htmlcss forwards; /* Para que haya una animación */
+}
+
+@keyframes htmlcss{
+    0%{
+        width: 0%; /* Para que tenga un ancho de 0% */
+    }
+    100%{
+        width: 75%; /* Para que tenga un ancho de 90% */
+    }
+}
+
+.habilidades .habilidad .java{
+    width: 0%; /* Para que tenga un ancho de 0% */
+    animation: 2s java forwards; /* Para que haya una animación */
+}
+
+@keyframes java{
+    0%{
+        width: 0%; /* Para que tenga un ancho de 0% */
+    }
+    100%{
+        width: 90%; /* Para que tenga un ancho de 90% */
+    }
+}
+
+.habilidades .habilidad .dockerkubernetes{
+    width: 0%; /* Para que tenga un ancho de 0% */
+    animation: 2s dockerkubernetes forwards; /* Para que haya una animación */
+}
+
+@keyframes dockerkubernetes{
+    0%{
+        width: 0%; /* Para que tenga un ancho de 0% */
+    }
+    100%{
+        width: 80%; /* Para que tenga un ancho de 90% */
+    }
+}
+
+.habilidades .habilidad .spring{
+    width: 0%; /* Para que tenga un ancho de 0% */
+    animation: 2s spring forwards; /* Para que haya una animación */
+}
+
+@keyframes spring{
+    0%{
+        width: 0%; /* Para que tenga un ancho de 0% */
+    }
+    100%{
+        width: 75%; /* Para que tenga un ancho de 90% */
+    }
+}
+
+.habilidades .habilidad .msvc{
+    width: 0%; /* Para que tenga un ancho de 0% */
+    animation: 2s msvc forwards; /* Para que haya una animación */
+}
+
+@keyframes msvc{
+    0%{
+        width: 0%; /* Para que tenga un ancho de 0% */
+    }
+    100%{
+        width: 90%; /* Para que tenga un ancho de 90% */
+    }
+}
+
+.habilidades .habilidad .comunicacion{
+    width: 0%; /* Para que tenga un ancho de 0% */
+    animation: 2s comunicacion forwards; /* Para que haya una animación */
+}
+
+@keyframes comunicacion{
+    0%{
+        width: 0%; /* Para que tenga un ancho de 0% */
+    }
+    100%{
+        width: 95%; /* Para que tenga un ancho de 90% */
+    }
+}
+
+.habilidades .habilidad .trabajoequipo{
+    width: 0%; /* Para que tenga un ancho de 0% */
+    animation: 2s trabajoequipo forwards; /* Para que haya una animación */
+}
+
+@keyframes trabajoequipo{
+    0%{
+        width: 0%; /* Para que tenga un ancho de 0% */
+    }
+    100%{
+        width: 90%; /* Para que tenga un ancho de 90% */
+    }
+}
+
+.habilidades .habilidad .creatividad{
+    width: 0%; /* Para que tenga un ancho de 0% */
+    animation: 2s creatividad forwards; /* Para que haya una animación */
+}
+
+@keyframes creatividad{
+    0%{
+        width: 0%; /* Para que tenga un ancho de 0% */
+    }
+    100%{
+        width: 90%; /* Para que tenga un ancho de 90% */
+    }
+}
+
+.habilidades .habilidad .dedicacion{
+    width: 0%; /* Para que tenga un ancho de 0% */
+    animation: 2s dedicacion forwards; /* Para que haya una animación */
+}
+
+@keyframes dedicacion{
+    0%{
+        width: 0%; /* Para que tenga un ancho de 0% */
+    }
+    100%{
+        width: 80%; /* Para que tenga un ancho de 90% */
+    }
+}
+
+.habilidades .habilidad .proyect{
+    width: 0%; /* Para que tenga un ancho de 0% */
+    animation: 2s proyect forwards; /* Para que haya una animación */
+}
+
+@keyframes proyect{
+    0%{
+        width: 0%; /* Para que tenga un ancho de 0% */
+    }
+    100%{
+        width: 90%; /* Para que tenga un ancho de 90% */
+    }
+}
+
+/* SECCION PORTFOLIO */
+.portfolio {
+    background-color: #252A2E; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 50px 20px; /* Para que haya espacio entre el contenido y el borde */
+    overflow: hidden; /* Para que el contenido no se salga del contenedor */
+}
+
+.portfolio .contenido-seccion {
+    max-width: 1100px; /* Para que no ocupe todo el ancho */
+    margin: auto; /* Para centrar */
+}
+
+.portfolio h2 {
+    font-size: 48px; /* Tamaño del texto */
+    font-family: 'Righteous'; /* Fuente del texto */
+    text-align: center; /* Para que el texto esté centrado */
+    padding: 20px 0; /* Para que haya espacio entre el texto y el borde */
+}
+
+.portfolio .galeria {
+    display: flex; /* Para que los elementos estén en línea */
+    flex-wrap: wrap; /* Para que los elementos se ajusten al ancho */
+    justify-content: space-around; /* Para que haya espacio entre los elementos */
+}
+
+.portfolio .galeria .proyecto {
+    position: relative; /* Para que haya posición relativa */
+    max-width: 340px; /* Para que no ocupe todo el ancho */
+    height: fit-content; /* Para que tenga un alto ajustado al contenido */
+    margin: 10px; /* Para que haya espacio entre los elementos */
+    cursor: pointer; /* Para que el cursor sea de tipo mano */
+}
+
+.portfolio .galeria .proyecto img {
+    width: 100%; /* Para que tenga un ancho de 100% */
+    display: block; /* Para que la imagen esté centrada */
+}
+
+.portfolio .galeria .proyecto .overlay {
+    position: absolute; /* Para que haya posición absoluta */
+    top: 0; /* Para que esté arriba */
+    width: 100%; /* Para que tenga todo el ancho */
+    height: 100%; /* Para que tenga todo el alto */
+    text-align: center; /* Para que el texto esté centrado */
+    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8)); /* Para que haya un degradado */
+    display: flex; /* Para que los elementos estén en línea */
+    flex-direction: column; /* Para que los elementos estén en columna */
+    justify-content: center; /* Para que los elementos estén centrados verticalmente */
+    transition: 1s; /* Para que haya una transición */
+    font-size: 18px; /* Tamaño del texto */
+    letter-spacing: 3px; /* Para que haya espacio entre las letras */
+    opacity: 0;
+}
+
+.portfolio .galeria .proyecto .overlay h3 {
+    margin-bottom: 20px; /* Para que haya espacio entre los títulos y los párrafos */
+    transition: 1s; /* Para que haya una transición */
+}
+
+.portfolio .galeria .proyecto .overlay:hover {
+    opacity: 1; /* Para que sea visible */
+}
+
+.portfolio .galeria .proyecto .overlay:hover h3 {
+    margin-bottom: 0px; /* Para que no haya espacio entre los títulos y los párrafos */
+}
+
+/* Animaciones estratégicas */
+@keyframes moveOut1 {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(-150px, -150px) scale(1); }
+}
+
+@keyframes moveOut2 {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(500px, -220px) scale(1); }
+}
+
+@keyframes moveOut3 {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(150px, 150px) scale(1); }
+}
+
+@keyframes moveOut4 {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(-150px, 50px) scale(1); }
+}
+
+@keyframes moveOut5 {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(0, -200px) scale(1); }
+}
+
+@keyframes moveOut6 {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(-350px, 100px) scale(1); } /* Ajustado para moverlo a la izquierda y abajo */
+}
+
+/* Inicialmente sin animación */
+.proyecto {
+    transform: translate(0, 0) scale(1);
+    transition: transform 1.5s ease-out;
+}
+
+/* Aplicar animación al pasar el mouse sobre el portafolio */
+.portfolio:hover .proyecto.moveOut1 {
+    animation: moveOut1 1.5s ease-out forwards; /* Aplicar la animación */
+}
+
+.portfolio:hover .proyecto.moveOut2 {
+    animation: moveOut2 1.5s ease-out forwards;     /* Aplicar la animación */
+}
+
+.portfolio:hover .proyecto.moveOut3 {
+    animation: moveOut3 1.5s ease-out forwards;
+}
+
+.portfolio:hover .proyecto.moveOut4 {
+    animation: moveOut4 1.5s ease-out forwards;
+}
+
+.portfolio:hover .proyecto.moveOut5 {
+    animation: moveOut5 1.5s ease-out forwards;
+}
+
+.portfolio:hover .proyecto.moveOut6 {
+    animation: moveOut6 1.5s ease-out forwards;
+}
+
+.portfolio .proyecto {
+    animation: none; /* Detiene cualquier animación activa */
+}
+
+/* SECCION CONTACTO */
+.contacto{
+    background-image: url(img/contact_bg.png); /* Para que haya una imagen de fondo */
+    background-color: #1e2326; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 50px 0; /* Para que haya espacio entre el contenido y el borde */
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto .col img{
+    width: 100%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* SECCION RESPONSIVE */
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
+
+/* Para pantallas más pequeñas (1118px o menos) */
+@media screen and (max-width: 1118px) {
+    /* Cambiar la disposición de los elementos de la galería */
+    .portfolio .galeria {
+        display: flex;
+        flex-wrap: wrap; /* Los elementos se ajustarán cuando no haya espacio suficiente */
+        justify-content: space-between; /* Asegura que haya espacio entre los elementos */
+    }
+    
+    .portfolio .galeria .proyecto {
+        max-width: 48%; /* Para que haya dos elementos por fila */
+        margin-bottom: 20px; /* Un poco de espacio debajo de cada elemento */
+    }
+
+    /* Adaptar las animaciones para que no se muevan tanto en pantallas más pequeñas */
+    @keyframes moveOut1 {
+        0% { transform: translate(0, 0) scale(1); }
+        100% { transform: translate(-80px, -20px) scale(1); } /* Menos desplazamiento */
+    }
+
+    @keyframes moveOut2 {
+        0% { transform: translate(0, 0) scale(1); }
+        100% { transform: translate(100px, -20px) scale(1); } /* Menos desplazamiento */
+    }
+
+    @keyframes moveOut3 {
+        0% { transform: translate(0, 0) scale(1); }
+        100% { transform: translate(-100px, -20px) scale(1); } /* Menos desplazamiento */
+    }
+
+    @keyframes moveOut4 {
+        0% { transform: translate(0, 0) scale(1); }
+        100% { transform: translate(100px, -20px) scale(1); } /* Menos desplazamiento */
+    }
+
+    @keyframes moveOut5 {
+        0% { transform: translate(0, 0) scale(1); }
+        100% { transform: translate(-100px, -20px) scale(1); } /* Menos desplazamiento */
+    }
+
+    @keyframes moveOut6 {
+        0% { transform: translate(0, 0) scale(1); }
+        100% { transform: translate(100px, -20px) scale(1); } /* Menos desplazamiento */
+    }
+
+    /* Reajustar la disposición de los proyectos en la galería para pantallas muy pequeñas */
+    .portfolio .galeria .proyecto img {
+        width: 100%; /* Asegura que la imagen ocupe el 100% de su contenedor */
+    }
+}
+
+/* Para pantallas aún más pequeñas (700px o menos) */
+@media screen and (max-width: 700px) {
+    .portfolio .galeria .proyecto {
+        max-width: 100%; /* Los elementos ocuparán todo el ancho disponible */
+    }
+
+    .portfolio .galeria {
+        display: block; /* Establecer los elementos en una sola columna */
+    }
+}
+
+
+
+
+
+
+
+
